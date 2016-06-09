@@ -21,7 +21,7 @@ def index():
 	Focus = (request.args.get("Focus"))
 	if Focus:
 		Focus = int(Focus)
-	if Caster:
+	if Caster and Defense and Armor and Boxes and Focus:
 		percent = HC.survive_options(Caster, Defense, Armor, Boxes, Focus)
 	else:
 		percent = " "
